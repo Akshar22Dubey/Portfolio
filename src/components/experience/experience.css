@@ -1,0 +1,165 @@
+#experience {
+  margin: 2px;
+  width: 100%;
+  height: 140vh;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 1px;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.experience_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  animation-name: skillanimation;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+.experience_container > div {
+  background: var(--color-primary);
+  padding: 2.4rem 5rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+.experience_container > div:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+  transform: translateY(-20px);
+}
+
+.experience_container > div h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: white;
+}
+.experience_content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2rem;
+}
+.experience_details {
+  display: flex;
+  gap: 1rem;
+}
+.experience_details-icons {
+  margin-top: 6px;
+  color: var(white);
+}
+
+@keyframes skillanimation {
+  0% {
+    opacity: 0;
+    transform: translateX(5000px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/** animation on scroll **/
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes aboutanimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/*------ For medium devices------*/
+@media screen and (max-width: 1024px) {
+  #experience {
+    height: auto;
+  }
+  .experience_container {
+    grid-template-columns: 1fr;
+  }
+  .experience_container > div {
+    width: 80%;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+  .experience_content {
+    padding: 1rem;
+  }
+}
+
+/*------ For small devices------*/
+@media screen and (max-width: 600px) {
+  #experience {
+    height: auto;
+  }
+  .experience_container {
+    gap: 1rem;
+  }
+  .experience_container > div {
+    width: 100%;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+  }
+  .experience_content {
+    height: auto;
+  }
+}

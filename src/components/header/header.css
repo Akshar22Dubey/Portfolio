@@ -1,0 +1,126 @@
+header {
+  height: 200vh;
+  padding-top: 7rem;
+  overflow: hidden;
+  animation: headeranimation 5s linear 2s infinite alternate;
+}
+.headers {
+  width: 100%;
+  height: 80vh;
+}
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*====== Styling Buttons=======*/
+.cvbutton {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.4rem;
+  justify-content: left;
+}
+
+.content {
+  display: flex; /* Use Flexbox to arrange text and image side by side */
+  align-items: center; /* Vertically center items */
+  justify-content: space-between; /* Space evenly between text and image */
+  padding: 0 20px; /* Add padding to create spacing */
+}
+
+.text {
+  flex: 1; /* Allow the text to take available space */
+}
+
+/*====== Styling sociallinks=======*/
+.header_socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  left: 10px;
+  bottom: 3rem;
+}
+
+.header_socials::after {
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background: var(--color-primary);
+}
+
+/*====== Styling Image=======*/
+.me {
+  background: linear-gradient(var(--color-primary), transparent);
+  width: 20rem; /* Adjust the width as needed */
+  height: fit-content;
+  border-radius: 50% 50% 0 0; /* Apply the curved border */
+  position: absolute;
+  left: 70%;
+  transform: translate(-50%, 0);
+  bottom: 5rem; /* Adjust the bottom spacing as needed */
+  margin-top: 5rem; /* Add margin to keep the image below the text */
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+/*========== Optional Styling to Make Image Fit Neatly ===========*/
+/* You can add these styles if necessary */
+.me img {
+  width: 100%;
+  height: fit-content;
+  display: block;
+  border-radius: 50% 50% 0 0; /* Apply the curved border to the image */
+  animation-name: headeranimations;
+  animation-duration: 5s;
+}
+@keyframes headeranimations {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scroll_down {
+  position: absolute;
+  right: -2.3rem;
+  bottom: 5rem;
+  transform: rotate(90deg);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+/*===========  Media queries for medium devices================*/
+@media screen and (max-width: 1024px) {
+  header {
+    height: 68vh;
+  }
+  .me {
+    width: 15rem;
+    top: 18rem;
+    left: 25rem;
+  }
+}
+
+/*===========  Media queries for small devices================*/
+@media screen and (max-width: 600px) {
+  header {
+    height: 100vh;
+  }
+  .me {
+    width: 15rem; /* Adjust the width as needed for small devices */
+    height: auto;
+    padding: 0rem 0rem 0rem 0rem; /* Adjust the padding for small devices */
+    left: 14rem;
+
+    top: 17rem; /* Adjust the bottom position for small devices */
+  }
+
+  .header_socials,
+  .scroll_down {
+    display: none;
+  }
+}
