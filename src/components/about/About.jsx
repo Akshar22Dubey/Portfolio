@@ -46,7 +46,7 @@ function RevealComponent() {
               <article className="about_card">
                 <FaAward className="about_icon" />
                 <h5>CGPA</h5>
-                <small>9.13</small>
+                <small>9.02</small>
               </article>
 
               <article className="about_card">
