@@ -20,7 +20,7 @@ video {
   animation-timing-function: linear;
 }
 
-.about_me {
+/* .about_me {
   width: 100%;
   aspect-ratio: 6/6;
   border-radius: 2rem;
@@ -32,7 +32,7 @@ video {
   );
   display: grid;
   place-items: center;
-}
+} */
 
 .about_me-image {
   border-radius: 2rem;

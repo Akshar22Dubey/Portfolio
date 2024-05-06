@@ -52,16 +52,8 @@ video {
 
 /*====== Styling Image=======*/
 .me {
-  background: linear-gradient(var(--color-primary), transparent);
-  width: 20rem; /* Adjust the width as needed */
+  width: 30rem; /* Adjust the width as needed */
   height: fit-content;
-  border-radius: 50% 50% 0 0; /* Apply the curved border */
-  position: absolute;
-  left: 70%;
-  transform: translate(-50%, 0);
-  bottom: 5rem; /* Adjust the bottom spacing as needed */
-  margin-top: 5rem; /* Add margin to keep the image below the text */
-  padding: 0rem 0rem 0rem 0rem;
 }
 
 /*========== Optional Styling to Make Image Fit Neatly ===========*/

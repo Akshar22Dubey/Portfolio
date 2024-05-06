@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./about.css";
 import { FaAward } from "react-icons/fa";
-import Aboutpic from "../../Extras/ProfilePhoto.jpeg";
+import Aboutpic from "../../Extras/photo-1531297484001-80022131f5a1.jpg";
 
 function RevealComponent() {
   useEffect(() => {

@@ -1,13 +1,12 @@
 import React from "react";
 import "./header.css";
 import Buttons from "./buttons";
-import Me from "../../Extras/ProfilePhoto.jpeg";
+import Me from "../../Extras/images2.png";
 import Socialmedia from "./socialid";
 import videobg from "../../Extras/video.mp4";
 const Header = () => {
   return (
     <div className="headers">
-      <video src={videobg} autoPlay loop muted className="vid" />
       <header className="header">
         <div className="container header_container">
           <div className="content">

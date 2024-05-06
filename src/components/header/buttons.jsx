@@ -1,5 +1,5 @@
 import React from "react";
-import Resume from "../../Extras/RESUME.pdf";
+import Resume from "../../Extras/Akshar_Dubey_Resume.pdf";
 function buttons() {
   return (
     <div className="cvbutton">
