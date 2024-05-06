@@ -9,7 +9,7 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/contact";
 import Footer from "./components/footer/Footer";
-import Videobg from "./Extras/video.mp4";
+
 const App = () => {
   return (
     <>
