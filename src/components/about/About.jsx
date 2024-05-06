@@ -37,7 +37,7 @@ function RevealComponent() {
         <div className="container about_container">
           <div className="about_me">
             <div className="about_me-image">
-              <img src={Aboutpic} alt="About Image" />
+              <img src={Aboutpic}  />
             </div>
           </div>
 
