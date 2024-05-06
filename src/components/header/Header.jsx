@@ -3,7 +3,6 @@ import "./header.css";
 import Buttons from "./buttons";
 import Me from "../../Extras/images2.png";
 import Socialmedia from "./socialid";
-import videobg from "../../Extras/video.mp4";
 const Header = () => {
   return (
     <div className="headers">
