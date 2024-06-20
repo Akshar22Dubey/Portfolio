@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 import "./portfolio.css";
 import Drumkit from "../../Extras/images.jpg";
 import Learningapp from "../../Extras/images (1).jpg";
-
+import BloodBank from "../../Extras/image_blood_bank.jpg";
+import Transistor from "../../Extras/image_6T.jpg";
 function RevealComponent() {
   useEffect(() => {
     function reveal() {
@@ -44,6 +45,7 @@ function RevealComponent() {
               href="https://github.com/Akshar22Dubey/FirstProject"
               className="btn"
               target="_blank"
+              rel="noopener noreferrer"
             >
               GitHub
             </a>
@@ -51,6 +53,7 @@ function RevealComponent() {
               href="https://akshar22dubey.github.io/FirstProject/"
               className="btn btn-primary"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Live Demo
             </a>
@@ -59,7 +62,7 @@ function RevealComponent() {
 
         <article className="portfolio_item">
           <div className="portfolio_item-image">
-            <img src={Learningapp} alt="as" className="lapp" />
+            <img src={Learningapp} alt="Learning app" className="lapp" />
           </div>
           <h3>Interactive Learning and Poem App</h3>
           <div className="portfolio_item-cta">
@@ -67,6 +70,7 @@ function RevealComponent() {
               href="https://github.com/Akshar22Dubey/Learningapp"
               className="btn"
               target="_blank"
+              rel="noopener noreferrer"
             >
               GitHub
             </a>
@@ -74,10 +78,45 @@ function RevealComponent() {
               href="https://please-ms26.onrender.com"
               className="btn btn-primary"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Live Demo
             </a>
           </div>
+        </article>
+
+        <article className="portfolio_item">
+          <div className="portfolio_item-image">
+            <img src={BloodBank} alt="Blood Bank" />
+          </div>
+          <h3>BitBlood</h3>
+          <div className="portfolio_item-cta">
+            <a
+              href="https://github.com/Akshar22Dubey/New"
+              className="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://new-emxx.onrender.com"
+              className="btn btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Demo
+            </a>
+          </div>
+        </article>
+
+        <article className="portfolio_item">
+          <div className="portfolio_item-image">
+            <img src={Transistor} alt="Learning app" className="lapp" />
+          </div>
+          <h3>Analysis of High Performance Low Leakage 6T SRAM Cell Design With Advanced Transistor For Low-Power Application</h3>
+          
+          
         </article>
       </div>
     </section>
