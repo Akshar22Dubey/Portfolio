@@ -121,3 +121,14 @@ video {
     width: var(--container-width-sm);
   }
 }
+.swiper-pagination .swiper-pagination-bullet {
+ background-color: blanchedalmond;
+  width: 10px; /* Adjust size of the dots */
+  height: 10px;
+  margin: 0 5px; /* Adjust spacing between dots */
+}
+
+
+.swiper-pagination-bullet-active {
+  background-color: wheat /* Change to your desired active color */
+}
