@@ -1,11 +1,12 @@
 #experience {
   margin: 2px;
   width: 100%;
-  height: 140vh;
+  height: 100%; /* Set height to auto for better responsiveness */
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-top: 1px;
+  overflow: hidden; /* Ensures content stays within the section */
 }
 
 video {
@@ -17,6 +18,7 @@ video {
   left: 0;
   z-index: -1;
 }
+
 .experience_container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -28,35 +30,39 @@ video {
 
 .experience_container > div {
   background: var(--color-primary);
-  padding: 2.4rem 5rem;
+  padding: 2.4rem 2rem; /* Adjusted padding for better fit on smaller screens */
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: var(--transition);
 }
+
 .experience_container > div:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
   cursor: default;
-  transform: translateY(-20px);
+  transform: translateY(-10px); /* Reduced the translate to prevent overlapping */
 }
 
 .experience_container > div h3 {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem; /* Adjusted margin for better spacing */
   color: white;
 }
+
 .experience_content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 2rem;
 }
+
 .experience_details {
   display: flex;
   gap: 1rem;
 }
+
 .experience_details-icons {
   margin-top: 6px;
-  color: var(white);
+  color: white; /* Fixed color variable */
 }
 
 @keyframes skillanimation {
@@ -75,15 +81,19 @@ video {
   position: relative;
   opacity: 0;
 }
+
 .reveal.active {
   opacity: 1;
 }
+
 .active.fade-bottom {
   animation: fade-bottom 1s ease-in;
 }
+
 .active.fade-left {
   animation: fade-left 1s ease-in;
 }
+
 .active.fade-right {
   animation: fade-right 1s ease-in;
 }
@@ -98,6 +108,7 @@ video {
     opacity: 1;
   }
 }
+
 @keyframes fade-left {
   0% {
     transform: translateX(-100px);
@@ -108,6 +119,7 @@ video {
     opacity: 1;
   }
 }
+
 @keyframes fade-right {
   0% {
     transform: translateX(100px);
@@ -118,6 +130,7 @@ video {
     opacity: 1;
   }
 }
+
 @keyframes aboutanimation {
   0% {
     opacity: 0;
@@ -128,19 +141,24 @@ video {
     transform: translateX(0);
   }
 }
+
 /*------ For medium devices------*/
 @media screen and (max-width: 1024px) {
   #experience {
     height: auto;
+    padding-bottom: 20px; /* Added padding for better spacing */
   }
+  
   .experience_container {
     grid-template-columns: 1fr;
   }
+  
   .experience_container > div {
-    width: 80%;
+    width: 90%; /* Adjusted width to fit better */
     padding: 2rem;
     margin: 0 auto;
   }
+  
   .experience_content {
     padding: 1rem;
   }
@@ -150,16 +168,20 @@ video {
 @media screen and (max-width: 600px) {
   #experience {
     height: auto;
+    padding-bottom: 20px; /* Added padding for better spacing */
   }
+  
   .experience_container {
     gap: 1rem;
   }
+  
   .experience_container > div {
     width: 100%;
-    padding: 2rem 1rem;
+    padding: 1.5rem; /* Adjusted padding to fit better on smaller screens */
     margin: 0 auto;
   }
+  
   .experience_content {
-    height: auto;
+    padding: 1rem;
   }
 }
