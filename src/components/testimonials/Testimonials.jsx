@@ -13,6 +13,7 @@ import msphoto from "../../Extras/th.jpg";
 import googlephoto from "../../Extras/th (1).jpg";
 import winterconsultphoto from "../../Extras/th (2).jpg";
 import bitphoto from "../../Extras/th (3).jpg";
+import coursera from "../../Extras/image_coursera.jpg";
 function RevealComponent() {
   useEffect(() => {
     function reveal() {
@@ -98,6 +99,31 @@ function RevealComponent() {
             steering the team to an impressive 1st place victory among 100+
             teams in the esteemed cultural fest BITOTSAV, comprising more than
             50 diverse technical and cultural events.
+          </small>
+        </SwiperSlide>
+
+        <SwiperSlide className="testimonial">
+          <div className="client_avatar">
+            <img src={bitphoto} alt="Avator one" />
+          </div>
+          <h5 className="client_name">Runner up Of Pantheon</h5>
+          <small className="client_review">
+            Demonstrated exemplary team work, successfully steering the team to
+            an impressive 2nd place position among 100+ teams in the esteemed
+            technical fest PANTHEON, comprising more than 50 diverse technical
+            events.
+          </small>
+        </SwiperSlide>
+
+        <SwiperSlide className="testimonial">
+          <div className="client_avatar">
+            <img src={coursera} alt="Avator one" />
+          </div>
+          <h5 className="client_name">SQL for Data Science</h5>
+          <small className="client_review">
+            Certified in SQL for Data Science through Coursera, demonstrating
+            mastery of foundational SQL skills crucial for data science
+            applications.
           </small>
         </SwiperSlide>
       </Swiper>
