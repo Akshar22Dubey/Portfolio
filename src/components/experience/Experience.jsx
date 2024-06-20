@@ -70,7 +70,15 @@ function RevealComponent() {
             <article className="experience_details">
               <BsPatchCheckFill className="experience_details-icons" />
               <div>
-                <h4>C</h4>
+                <h4>Python</h4>
+                <small className="text-light">Intermediate</small>
+              </div>
+            </article>
+
+            <article className="experience_details">
+              <BsPatchCheckFill className="experience_details-icons" />
+              <div>
+                <h4>SQL</h4>
                 <small className="text-light">Intermediate</small>
               </div>
             </article>
@@ -78,7 +86,7 @@ function RevealComponent() {
         </div>
 
         <div className="experience_programming">
-          <h3>Software and Tools</h3>
+          <h3>Software Libraries and Tools</h3>
           <div className="experience_content">
             <article className="experience_details">
               <BsPatchCheckFill className="experience_details-icons" />
@@ -117,6 +125,66 @@ function RevealComponent() {
               <div>
                 <h4>VS-Code</h4>
                 <small className="text-light">Experienced</small>
+              </div>
+            </article>
+
+            <article className="experience_details">
+              <BsPatchCheckFill className="experience_details-icons" />
+              <div>
+                <h4>MS-Excel</h4>
+                <small className="text-light">Intermediate</small>
+              </div>
+            </article>
+
+            <article className="experience_details">
+              <BsPatchCheckFill className="experience_details-icons" />
+              <div>
+                <h4>Pandas</h4>
+                <small className="text-light">Intermediate</small>
+              </div>
+            </article>
+            <article className="experience_details">
+              <BsPatchCheckFill className="experience_details-icons" />
+              <div>
+                <h4>Power BI</h4>
+                <small className="text-light">Intermediate</small>
+              </div>
+            </article>
+            <article className="experience_details">
+              <BsPatchCheckFill className="experience_details-icons" />
+              <div>
+                <h4>Numpy</h4>
+                <small className="text-light">Intermediate</small>
+              </div>
+            </article>
+
+            <article className="experience_details">
+              <BsPatchCheckFill className="experience_details-icons" />
+              <div>
+                <h4>Matplotlib</h4>
+                <small className="text-light">Intermediate</small>
+              </div>
+            </article>
+
+            <article className="experience_details">
+              <BsPatchCheckFill className="experience_details-icons" />
+              <div>
+                <h4>MS-PowerPoint</h4>
+                <small className="text-light">Intermediate</small>
+              </div>
+            </article>
+            <article className="experience_details">
+              <BsPatchCheckFill className="experience_details-icons" />
+              <div>
+                <h4>HSpice</h4>
+                <small className="text-light">Intermediate</small>
+              </div>
+            </article>
+            <article className="experience_details">
+              <BsPatchCheckFill className="experience_details-icons" />
+              <div>
+                <h4>NI Multisim</h4>
+                <small className="text-light">Intermediate</small>
               </div>
             </article>
           </div>
