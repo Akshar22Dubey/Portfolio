@@ -242,6 +242,61 @@ function RevealComponent() {
             </article>
           </div>
         </div>
+
+
+         <div className="experience_programming">
+          <h3>Course Work</h3>
+          <div className="experience_content">
+            <article className="experience_details">
+              <BsPatchCheckFill className="experience_details-icons" />
+              <div>
+                <h4>Operating Systems</h4>
+                <small className="text-light">Experienced</small>
+              </div>
+            </article>
+
+            <article className="experience_details">
+              <BsPatchCheckFill className="experience_details-icons" />
+              <div>
+                <h4>OOPS</h4>
+                <small className="text-light">Experienced</small>
+              </div>
+            </article>
+
+            <article className="experience_details">
+              <BsPatchCheckFill className="experience_details-icons" />
+              <div>
+                <h4>DBMS</h4>
+                <small className="text-light">Experienced</small>
+              </div>
+            </article>
+
+            <article className="experience_details">
+              <BsPatchCheckFill className="experience_details-icons" />
+              <div>
+                <h4>Computer Netwoks</h4>
+                <small className="text-light">Intermediate</small>
+              </div>
+            </article>
+
+            <article className="experience_details">
+              <BsPatchCheckFill className="experience_details-icons" />
+              <div>
+                <h4>Microprocessor & Micorcontroller</h4>
+                <small className="text-light">Experienced</small>
+              </div>
+            </article>
+
+            <article className="experience_details">
+              <BsPatchCheckFill className="experience_details-icons" />
+              <div>
+                <h4>VLSI</h4>
+                <small className="text-light">Intermediate</small>
+              </div>
+            </article>
+          </div>
+        </div>
+        
       </div>
     </section>
   );
